@@ -97,10 +97,10 @@ class DomParser
         $document = new DOMDocument();
 
         $html = mb_convert_encoding($this->htmlContent, 'HTML-ENTITIES', 'UTF-8');
-        @$document->loadHTML($html);
+        $document->loadHTML($html, LIBXML_NOERROR);
 
         // Execute query
-        if(! $nodes = (new DOMXPath($document))->query($this->pendingQuery)) {
+        if (! $nodes = (new DOMXPath($document))->query($this->pendingQuery)) {
             return null;
         }
 

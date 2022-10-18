@@ -37,7 +37,7 @@ class DomElementList implements ArrayAccess
         unset($this->elements[$offset]);
     }
 
-    public function offsetGet($offset)
+    public function offsetGet(mixed $offset): mixed
     {
         return isset($this->elements[$offset])
             ? new DomElement($this->elements[$offset])
