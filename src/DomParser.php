@@ -78,7 +78,7 @@ class DomParser
      */
     public function last(): ?DomElement
     {
-        return array_values(array_slice((array) $this->executeQuery(), -1))[0] ?? null;
+        return array_values(array_slice($this->executeQuery()->toArray(), -1))[0] ?? null;
     }
 
     /**
