@@ -1,3 +1,7 @@
+
+> **:warning: This project is no longer maintened. It's recommended to use the [DiDOM](https://github.com/Imangazaliev/DiDOM) package as a replacement.**
+
+
 # DOM Parser
 
 DOM Parser is an elegant and modern HTML / XML parser implemented in PHP with a focus on simplicity.
